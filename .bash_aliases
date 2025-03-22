@@ -78,13 +78,18 @@ alias gup="git fetch && git rebase"
 alias gpsh="git push"
 alias gcm="git commit -v"
 alias gcma="git commit -v -a"
+# git commit all and push
+gcp() {
+	git commit -a -m "{$1}"
+	git push
+}
 alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gcom="git checkout main"
 alias gbr="git branch"
 alias gbra="git branch -a"
 alias gcount="git shortlog -sn"
-alias gcp="git cherry-pick"
+alias gcpp="git cherry-pick"
 alias glg="git log --stat --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --max-count=10"
 alias glgg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --max-count=10"
 alias gadd="git add"
@@ -98,13 +103,19 @@ alias grsts="git restore -s"
 alias grsta="git restore ."
 alias gsbm="git submodule update --init --remote --force --recursive"
 gsa() {
-    git stash apply stash@{$1}
+    git stash apply stash@"{$1}"
 }
 gsd() {
-    git stash drop stash@{$1}
+    git stash drop stash@"{$1}"
 }
 alias gsl="stash list"
 alias gss="stash save"
 alias gsw="git switch"
 alias gswm="git switch main"
 alias gswc="git switch -c"
+
+# Lazy git alias
+alias lzg="lazygit"
+
+# Lazy docker alias
+alias lzd="lazydocker"

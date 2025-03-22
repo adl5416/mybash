@@ -100,12 +100,6 @@ mkdirg() {
 	cd "$1"
 }
 
-# Lazy git commit all and push
-lazyg() {
-	git commit -a -m "$1"
-	git push
-}
-
 eval "$(starship init bash)"
 eval "$(zoxide init --cmd cd bash)"
 eval "$(fzf --bash)"
