@@ -1,11 +1,14 @@
 # These are the packages that need to be installed for every command in this bash configuration to work
 bash-completion
 bat
+cmatrix
 exa
 fastfetch
 fzf
 git
 git-completion
+lazydocker
+lazygit
 starship
 tar
 tmux
