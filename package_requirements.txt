@@ -5,6 +5,7 @@ cmatrix
 exa
 fastfetch
 fzf
+ghostty
 git
 git-completion
 lazydocker
