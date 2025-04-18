@@ -16,8 +16,14 @@ $git_branch\
 $git_status\
 [](fg:git_bg bg:lang_bg)\
 $nodejs\
+$c\
 $rust\
 $golang\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
 [](fg:lang_bg bg:background)\
 \n$character"""
 
@@ -133,7 +139,7 @@ format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
 [python]
 symbol = ""
 style = "bg:lang_bg"
-format = '[[ $symbol( $version) ](fg:lang_fg bg:lang_bg)]($style)'
+format = '[[ $symbol( $version $virtualenv) ](fg:lang_fg bg:lang_bg)]($style)'
 
 [character]
 disabled = false
